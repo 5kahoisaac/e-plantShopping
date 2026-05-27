@@ -60,7 +60,7 @@ const plants = [
     name: "Echinacea",
     description: "A medicinal powerhouse known to boost the immune system and fight infections.",
     price: 13.99,
-    image: "https://images.unsplash.com/photo-1598902468171-43e82808dbab?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=400&h=400&fit=crop",
     category: "Medicinal",
   },
   {
@@ -68,7 +68,7 @@ const plants = [
     name: "Chamomile",
     description: "A gentle medicinal herb used for centuries to aid sleep and reduce anxiety.",
     price: 10.99,
-    image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?w=400&h=400&fit=crop",
     category: "Medicinal",
   },
   {
@@ -100,7 +100,7 @@ const plants = [
     name: "Snake Plant",
     description: "An incredibly low-maintenance plant that thrives in low light and purifies the air.",
     price: 19.99,
-    image: "https://images.unsplash.com/photo-1593482892540-fa3dae5e9797?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=400&h=400&fit=crop",
     category: "Low Maintenance",
   },
   {
@@ -116,7 +116,7 @@ const plants = [
     name: "Pothos",
     description: "One of the easiest houseplants to grow, perfect for beginners and office spaces.",
     price: 9.99,
-    image: "https://images.unsplash.com/photo-1597055181200-7be07e2e2e5e?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1545241047-6083a3684587?w=400&h=400&fit=crop",
     category: "Low Maintenance",
   },
   {
@@ -124,7 +124,7 @@ const plants = [
     name: "Spider Plant",
     description: "A resilient plant that adapts to various conditions and produces adorable baby plants.",
     price: 11.99,
-    image: "https://images.unsplash.com/photo-1609170952480-a71aee64cc8f?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400&h=400&fit=crop",
     category: "Low Maintenance",
   },
   {
@@ -140,7 +140,7 @@ const plants = [
     name: "Peace Lily",
     description: "A beautiful low-maintenance plant that blooms even in low light and purifies the air.",
     price: 18.99,
-    image: "https://images.unsplash.com/photo-1616694547580-64b783a49e8a?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1466781783364-36c955e42a7f?w=400&h=400&fit=crop",
     category: "Low Maintenance",
   },
 ];
