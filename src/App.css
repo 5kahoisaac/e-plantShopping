@@ -1,0 +1,85 @@
+/* Landing Page with background image */
+.landing-page {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-content {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.landing-tagline {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.get-started-btn {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background-color: #40916c;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.get-started-btn:hover {
+  background-color: #2d6a4f;
+  transform: scale(1.05);
+}
+
+/* About Us Page */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-container h1 {
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+}
+
+.about-container h2 {
+  color: #40916c;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-container p {
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.about-container ul {
+  line-height: 1.8;
+  color: #444;
+}
