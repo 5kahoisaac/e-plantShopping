@@ -1,10 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import {
-  incrementQuantity,
-  decrementQuantity,
-  removeFromCart,
-} from "../features/CartSlice";
+import { removeItem, updateQuantity } from "../features/CartSlice";
 import Navbar from "../components/Navbar";
 import "./CartItem.css";
 
@@ -26,7 +22,7 @@ function CartItem() {
         {cartItems.length === 0 ? (
           <div className="empty-cart">
             <p>Your cart is empty.</p>
-            <Link to="/products" className="continue-shopping-btn">
+            <Link to="/products" className="get-started-button">
               Continue Shopping
             </Link>
           </div>
@@ -53,21 +49,35 @@ function CartItem() {
                     <div className="quantity-controls">
                       <button
                         className="qty-btn"
-                        onClick={() => dispatch(decrementQuantity(item.id))}
+                        onClick={() =>
+                          dispatch(
+                            updateQuantity({
+                              id: item.id,
+                              quantity: item.quantity - 1,
+                            })
+                          )
+                        }
                       >
                         −
                       </button>
                       <span className="qty-display">{item.quantity}</span>
                       <button
                         className="qty-btn"
-                        onClick={() => dispatch(incrementQuantity(item.id))}
+                        onClick={() =>
+                          dispatch(
+                            updateQuantity({
+                              id: item.id,
+                              quantity: item.quantity + 1,
+                            })
+                          )
+                        }
                       >
                         +
                       </button>
                     </div>
                     <button
                       className="delete-btn"
-                      onClick={() => dispatch(removeFromCart(item.id))}
+                      onClick={() => dispatch(removeItem(item.id))}
                     >
                       🗑️ Delete
                     </button>
@@ -81,10 +91,10 @@ function CartItem() {
                 Total Amount: ${totalAmount.toFixed(2)}
               </h2>
               <div className="cart-actions">
-                <Link to="/products" className="continue-shopping-btn">
+                <Link to="/products" className="get-started-button">
                   Continue Shopping
                 </Link>
-                <button className="checkout-btn" onClick={handleCheckout}>
+                <button className="get-started-button1" onClick={handleCheckout}>
                   Checkout
                 </button>
               </div>

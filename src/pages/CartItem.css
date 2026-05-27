@@ -144,7 +144,7 @@
   flex-wrap: wrap;
 }
 
-.continue-shopping-btn {
+.get-started-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #40916c;
@@ -155,11 +155,11 @@
   transition: background-color 0.2s;
 }
 
-.continue-shopping-btn:hover {
+.get-started-button:hover {
   background-color: #2d6a4f;
 }
 
-.checkout-btn {
+.get-started-button1 {
   padding: 0.75rem 1.5rem;
   background-color: #1b4332;
   color: white;

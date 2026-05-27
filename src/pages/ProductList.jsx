@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../features/CartSlice";
+import { addItem } from "../features/CartSlice";
 import plants from "../data/plants";
 import Navbar from "../components/Navbar";
 import "./ProductList.css";
@@ -12,10 +12,6 @@ function ProductList() {
 
   const isInCart = (plantId) => {
     return cartItems.some((item) => item.id === plantId);
-  };
-
-  const handleAddToCart = (plant) => {
-    dispatch(addToCart(plant));
   };
 
   return (
@@ -42,7 +38,7 @@ function ProductList() {
                       <p className="plant-price">${plant.price.toFixed(2)}</p>
                       <button
                         className="add-to-cart-btn"
-                        onClick={() => handleAddToCart(plant)}
+                        onClick={() => dispatch(addItem(plant))}
                         disabled={isInCart(plant.id)}
                       >
                         {isInCart(plant.id) ? "Added to Cart" : "Add to Cart"}
